@@ -194,18 +194,6 @@ namespace DCCleaner2
                         Winhttp.SetRequestHeader("X-Requested-With", "XMLHttpRequest");
                         Winhttp.Send();
                         Winhttp.WaitForResponse();
-                        /*string data5 = Winhttp.ResponseText;
-                        MessageBox.Show(data5);
-                        Regex regex5 = new Regex("&id=(?<board_id>\\w+)&no=");
-                        MatchCollection mc4 = regex5.Matches(data5);
-                        foreach (Match m in mc4)
-                        {
-                            board_id.Add(m.Groups["board_id"].Value);
-                            count++;
-                            if (count >= 10)
-                                break;
-                        }
-                        count = 1;*/
 
                         for (int j = 0; j < pageno.Count; j++)
                         {
